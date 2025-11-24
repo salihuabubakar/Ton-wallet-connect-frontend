@@ -12,19 +12,19 @@ export default defineConfig({
   server: {
     proxy: {
       "/auth": {
-        target: process.env.API_URL || "http://localhost:5001",
+        target: process.env.VITE_API_URL || "http://localhost:5001",
         changeOrigin: true
       },
       "/checkin": {
-        target: process.env.API_URL || "http://localhost:5001",
+        target: process.env.VITE_API_URL || "http://localhost:5001",
         changeOrigin: true
       },
       "/profile": {
-        target: process.env.API_URL || "http://localhost:5001",
+        target: process.env.VITE_API_URL || "http://localhost:5001",
         changeOrigin: true
       },
       "/leaderboard": {
-        target: process.env.API_URL || "http://localhost:5001",
+        target: process.env.VITE_API_URL || "http://localhost:5001",
         changeOrigin: true
       }
     }
